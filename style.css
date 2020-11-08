@@ -193,7 +193,6 @@ footer{
 
 .col{
     flex-flow: column wrap;
-    
 }
 
 .row{
@@ -236,7 +235,6 @@ footer{
     align-content:center;
     text-align: center;
     width: 460px;
-
 }
 
 .p-margin{
@@ -244,13 +242,11 @@ footer{
 }
 
 /*styles form buttons*/
-input[type=button]
-{
+input[type=button]{
     font-family: 'Patrick Hand SC';
 }
 
-input[type=radio]
-{
+input[type=radio]{
     visibility: hidden;
 }
 
@@ -277,7 +273,6 @@ input[type=radio]:checked + label{
     border-style: solid;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Patrick Hand SC';
-
 }
 
 
