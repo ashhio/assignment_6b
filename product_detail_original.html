@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Original - Bun Bun Bake Shop</title>
+    <meta name="type" content="original">
+</head>
+
+<body onunload="sendToCart()" onload="getCart(); getCartNumber();">
+    <header> 
+        <h1>
+            <a href="index.html">bun bun bake shop</a>
+        </h1>
+        <address class="addr">
+            <img src="img/phone_icon.png" alt="phone icon">555-555-5555 
+            <br>
+            <img src="img/location_icon.png" alt="location icon">100 Pittsburgh Rd, 
+            <br> 
+            Pittsburgh, PA 10000
+        </address>
+        <nav id="header_nav">
+            <a href="product_browse.html">order</a>
+            location
+            about
+            contact
+            <span id="cart">
+                <img src="img/shoppingcart_icon.png" alt="shopping cart icon">
+                <a href="cart.html">cart(
+                    <span id="cart-number">0</span>)
+                </a> 
+            </span> 
+        </nav>
+    </header>
+
+<main class = "main-margin">
+    <p>Order > 
+        <strong>Original</strong>
+    </p>
+    <div class="container product-detail flex">
+        <img class = "product-detail-img flex" src="img/original_lg_image.png" alt="original cinnamon roll">
+        <div class="product-detail-txt flex col">
+            <h2>original - $4.00</h2>
+            <p>
+                Enjoy our famous mouth-watering cinnamon roll! Hot and fresh from the oven every 
+                morning with just the perfect touch of spice and sweetness to start your day, or 
+                savor as a dessert. On second thought, why not both?
+            </p>
+            <br>
+            <br>
+            <!-- Select options-->
+            <form id="form">
+                <label for="quantity">Quantity</label>
+                <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                Glaze
+                <br>
+                <div class="flex row">
+                    <input type="radio" id="none" name="glaze" value="none" checked="checked">
+                    <label for="none">None</label>
+                    <br>
+                    <input type="radio" id="sugar" name="glaze" value="sugar">
+                    <label for="sugar">Sugar</label>
+                    <br>
+                    <input type="radio" id="vanilla" name="glaze" value="vanilla">
+                    <label for="vanilla">Vanilla</label>
+                    <br>
+                    <input type="radio" id="chocolate" name="glaze" value="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <br>
+                <input type="button" id="addToCartButton" class="big-button add-to-cart" value="add to cart" onclick="addToCart()">
+            </form>
+        </div>
+    </div>
+    <p class="ingredients flex">
+        Ingredients 
+        <br>
+        Flour, sugar, salt, yeast, milk, water, butter, eggs, cinnamon, vanilla 
+    </p>
+</main>
+
+<footer>
+    <nav>
+        <div class="container center2">
+            <p class="nav-element">home</p>
+            <p class="nav-element">order</p>
+            <p class="nav-element">location</p>
+            <p class="nav-element">about</p>
+            <p class="nav-element">contact</p>
+        </div>
+        <div class="container footer">
+            <address>555-555-5555 
+                <br>
+                100 Pittsburgh Rd, 
+                <br> Pittsburgh, PA 10000
+            </address>
+            <br>
+            <p>M-F: 9AM - 9 PM 
+                <br>
+                Sat: 9AM - 6PM 
+                <br>
+                Sun: Closed
+            </p>
+        </div>
+        <p class="align-center">
+            Buns that make you smile :) 
+            <br>
+            (c)Bun Bun Bake Shop 2020
+        </p>
+    </nav>
+</footer>
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
